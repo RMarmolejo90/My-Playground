@@ -1,13 +1,13 @@
 
-import Greet from './components/greet'
+import Stuff from './components/greet'
 import { Component } from 'react'
 
-class Thing extends Component {
+class App extends Component {
   render(){
     return(
-      <div>Hi <Greet/></div>
+      <div><Stuff/></div>
     );
   }
 }
 
-export default './app'
+export default App
