@@ -2,9 +2,19 @@
   text-align: center;
 }
 
+.green{
+  color: green;
+}
+
+.white{
+  color: white;
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 200px;
   pointer-events: none;
+  border: 1px transparent;
+  box-shadow: 0px 0px 20px 20px red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +24,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +45,8 @@
   to {
     transform: rotate(360deg);
   }
+
+
+
 }
+
