@@ -1,9 +1,13 @@
 
-import './App.css';
+import Greet from './components/greet'
+import { Component } from 'react'
 
-function card(props){
-  return <div class="card-box"><h1>My Name Is {props.name}</h1></div>
-
+class Thing extends Component {
+  render(){
+    return(
+      <div>Hi <Greet/></div>
+    );
+  }
 }
 
-export default './App'
+export default './app'
