@@ -1,4 +1,3 @@
-
 import Stuff from './components/greet'
 import { Component } from 'react'
 
