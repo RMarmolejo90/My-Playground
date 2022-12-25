@@ -17,3 +17,15 @@
   justify-content: space-between;
   margin: 30px;
 }
+
+p {
+  text-align: center;
+  color: tan;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px goldenrod;
+}
+
+.monster{
+  color: green;
+}

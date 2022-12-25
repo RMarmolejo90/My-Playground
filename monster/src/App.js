@@ -1,4 +1,7 @@
 import './App.css';
+import Monster from './monster';
+import logo from './logo512.png';
+
 
 function App() {
   return (
@@ -16,8 +19,18 @@ function App() {
           </li>
         </ul>
       </header>
-    </div>
+      <p>
+        This is the monster
+      </p>
+      <Monster/>
+      <img src={logo} alt="logo" />      
+    </div> 
+
+
   );
+
 }
+
+
 
 export default App;
