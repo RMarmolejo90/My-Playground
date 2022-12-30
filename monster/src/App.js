@@ -1,6 +1,7 @@
 import './App.css';
 import Monster from './monster';
 import logo from './logo512.png';
+import Contacts from './contacts';
 
 
 function App() {
@@ -22,8 +23,14 @@ function App() {
       <p>
         This is the monster
       </p>
-      <Monster/>
-      <img src={logo} alt="logo" />      
+      <div className='monster-section'>
+        <Monster/>
+        <Contacts 
+          name = 'Rich'
+          phone = '(123)223-2323'
+        />
+        <img className='monster-img' src={logo} alt="logo" />      
+      </div>
     </div> 
 
 

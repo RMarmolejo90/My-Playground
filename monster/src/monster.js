@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 
+
+const name = 'tim'
 function Monster(){
+
     return(
-        <p className="monster">ROAR!</p>
+        <div>
+            <p>My name is {name} and im a monster!</p>
+        </div>
     );
 }
 
