@@ -2,40 +2,28 @@ import './App.css';
 import Monster from './monster';
 import logo from './logo512.png';
 import Contacts from './contacts';
+import Joke from './joke';
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Rich Marmolejo
-        </h1>
-        <ul className='flex-center'>
-          <li>
-            menu
-          </li>
-          <li>
-            Contact
-          </li>
-        </ul>
-      </header>
-      <p>
-        This is the monster
-      </p>
-      <div className='monster-section'>
-        <Monster/>
-        <Contacts 
-          name = 'Rich'
-          phone = '(123)223-2323'
-        />
-        <img className='monster-img' src={logo} alt="logo" />      
-      </div>
+      <Joke setup= "setup for the joke"
+        punchline= "haha i made a funny"
+      />
+      <Joke setup= "this is it"
+        punchline="you're laughing"
+      />
+      <Joke setup= "this is so unny"
+        punchline="Im not even funny"
+        isShittyJoke= {true}
+      />
+      <Joke setup="this one will getcha"
+        punchline="look at that"
+      />
+      
     </div> 
-
-
   );
-
 }
 
 

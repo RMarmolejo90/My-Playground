@@ -3,11 +3,12 @@ import { ReactDOM } from "react";
 
 export default Contacts
 
-function Contacts({name, phone}){
+function Contacts(props){
     return(
         <div className="contacts">
-            <h1>{name}</h1>
-            <p>{phone}</p>
+            {props.name && <h1>Hi Im {props.name}</h1>}
+            {props.phone && <p>Call Me At {props.phone}</p>}
+            {props.email}
         </div>
     )
 }
