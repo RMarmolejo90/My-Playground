@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from 'react-dom';
 
 
-const name = 'tim'
-function Monster(){
+const myName = ["alice", "bob", "charlie", "danielle"]
+
+
+function Monster(props){
+
+    const [text, setText] = useState('');
+    const [count, setCount] = useState(0);
+
+    const eventHandler = (event) => {
+        setText(event.target.value);
+    }
+
+    const countHandler = (event) => {
+        setCount(count + 6);
+    }
+    
 
     return(
         <div>
-            <p>My name is {name} and im a monster!</p>
+            <input type="text"
+            placeholder="write stuff" onChange={eventHandler} />           
+            <p>{text}</p>
+
+            <button onClick={countHandler}>Press Me</button>
+            <p>{count}</p>
         </div>
     );
 }

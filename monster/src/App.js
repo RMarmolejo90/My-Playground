@@ -8,20 +8,7 @@ import Joke from './joke';
 function App() {
   return (
     <div className="App">
-      <Joke setup= "setup for the joke"
-        punchline= "haha i made a funny"
-      />
-      <Joke setup= "this is it"
-        punchline="you're laughing"
-      />
-      <Joke setup= "this is so unny"
-        punchline="Im not even funny"
-        isShittyJoke= {true}
-      />
-      <Joke setup="this one will getcha"
-        punchline="look at that"
-      />
-      
+      <Monster/>
     </div> 
   );
 }
