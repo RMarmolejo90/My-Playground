@@ -7,17 +7,18 @@ const myName = ["alice", "bob", "charlie", "danielle"]
 
 function Monster(props){
 
-    const [text, setText] = useState('');
-    const [count, setCount] = useState(0);
+useEffect(() => {
+    setCount (count + 2);
+}, []);
+const [count, setCount] = useState(0);
+const countHandler = (event)=>{
+    setCount(count - 50000);
+}
+const [text, setText] = useState("here");
+const eventHandler = (event) => 
+    { (setCount % setCount === 0) ? setText("Good") : setText(event.target.value);
+}
 
-    const eventHandler = (event) => {
-        setText(event.target.value);
-    }
-
-    const countHandler = (event) => {
-        setCount(count + 6);
-    }
-    
 
     return(
         <div>
