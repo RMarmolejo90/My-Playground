@@ -2,6 +2,6 @@ export default Menu;
 
 function Menu(){
     return(
-        console.log('works')
-    )
+        <h1>Menu</h1>
+    );
 }

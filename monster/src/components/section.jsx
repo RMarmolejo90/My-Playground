@@ -1,21 +1,17 @@
 import React from 'react';
-import styled from "styled-components"
+import ItemText from './elements'
 
+const Section = (props) => {
 
-const section = () => {
     return (
-        <Wrap>
-            Section
-        </Wrap>
+        <div className="wrap center">
+            <ItemText
+            model='Model S' 
+            description = 'Order Online for Touchless Delivery'
+            />
+        </div>
     );
 };
 
-export default section;
 
-const Wrap = styled.div `
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(' ./public/images/Tesla-a.jpg ');
-`
+export default Section;
