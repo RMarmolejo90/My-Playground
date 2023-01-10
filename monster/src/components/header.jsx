@@ -2,6 +2,6 @@ export default Menu;
 
 function Menu(){
     return(
-        <h1>Menu</h1>
+        <h1 className="menu">Menu</h1>
     );
 }

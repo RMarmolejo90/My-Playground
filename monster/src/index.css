@@ -12,6 +12,14 @@ body{
 
 .container{
     height: 100vh;
+    background-image: url('./images/Tesla-b.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.container h2{
+    background-color: #DDDDDD99;
 }
 
 .wrap{
@@ -29,4 +37,8 @@ body{
     align-items: center;
     justify-content: flex-start;
     padding: 30px;
+}
+
+.menu{
+    background-color: #393c4122;
 }
